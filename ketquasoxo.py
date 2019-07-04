@@ -11,34 +11,29 @@ def ketquasoxo():
         news_item = {}
         news_item['title'] = item.title.text
         news_item['description'] = item.description.text
-        news_item['link'] = item.link.text
         # news_item['image'] = item.content['url']
         news_items.append(news_item)
         # print(json.dumps(news_items,indent = 4)).encode("utf-8")
         # x = json.dumps(news_items)
     return news_items
-dict =(ketquasoxo())
-print(dict)
-contacts = [{"John": "01217000111", "Addison": "01217000222", "Jack": "01227000123"}]
+# dict =(ketquasoxo())
+# print(dict[1]['title'])
+#
+# print(dict[1]['description'])
 
-people = [
-{'name': "Tom", 'age': 10},
-{'name': "Mark", 'age': 5},
-{'name': "Pam", 'age': 7}
-]
+# response = requests.get("https://jsonplaceholder.typicode.com/todos")
+# data = json.loads(response.text)
+# with open('data.json', 'w') as outfile:
+#     json.dump(x, outfile)
 
-def search(name):
-    for p in people:
-        if p['name'] == name:
-            return p
 
-print(search("Pam"))
-def search(title):
-    for d in dict:
-        if d['title'] == title:
-            return d
 
-print(search("title"))
-for title in dict:
-    print(title['title'])
-    print(title['description'])
+# a=""
+# b=""
+# for title in dict:
+#     # print(title['title'])
+#     # print(title['description'])
+#     dict.append(title['title'])
+#     dict.append(title['description'])
+#
+#     break
